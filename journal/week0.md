@@ -26,3 +26,14 @@
                 gp env AWS_SECRET_ACCESS_KEY=xyz
                 gp env AWS_DEFAULT_REGION=us-east-1
             ```
+
+## AWS CLI Budget
+- add budget jsons
+- set account id in env
+- command
+    ```bash
+        aws budgets create-budget \
+            --account-id $ACCOUNT_ID \
+            --budget file://aws/budget.json \
+            --notifications-with-subscribers file://aws/notifications-with-subscribers.json
+    ```
