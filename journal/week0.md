@@ -22,7 +22,7 @@
             ```
         2. set gitpod env variables
             ```
-                gp AWS_ACCESS_KEY_ID=zxt
-                gp AWS_SECRET_ACCESS_KEY=xyz
-                gp AWS_DEFAULT_REGION=us-east-1
+                gp env AWS_ACCESS_KEY_ID=zxt
+                gp env AWS_SECRET_ACCESS_KEY=xyz
+                gp env AWS_DEFAULT_REGION=us-east-1
             ```
