@@ -51,3 +51,9 @@ aws sns subscribe \
     --protocol email \
     --notification-endpoint m.ousam@outlook.com
 ```
+
+## Git Tags
+```
+git tag week0
+git push --tags
+```
