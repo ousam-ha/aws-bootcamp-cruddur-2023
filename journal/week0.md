@@ -34,6 +34,20 @@
     ```bash
         aws budgets create-budget \
             --account-id $ACCOUNT_ID \
-            --budget file://aws/budget.json \
-            --notifications-with-subscribers file://aws/notifications-with-subscribers.json
+            --budget file://aws/json/budget.json \
+            --notifications-with-subscribers file://aws/json/notifications-with-subscribers.json
     ```
+
+## Create SNS 
+```
+aws sns create-topic \
+    --name my-topic
+```
+
+## Subscribe SNS
+```
+aws sns subscribe \
+    --topic-arn arn:aws:sns:us-east-1:665214597604:my-topic \
+    --protocol email \
+    --notification-endpoint m.ousam@outlook.com
+```
