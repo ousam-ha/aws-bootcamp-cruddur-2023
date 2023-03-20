@@ -23,6 +23,8 @@
 aws xray create-group \
    --group-name "Cruddur" \
    --filter-expression "service(\"backend-flask\")"
+
+aws xray create-sampling-rule --cli-input-json file://aws/json/xray.json
 ```
 
 ### Tracing
